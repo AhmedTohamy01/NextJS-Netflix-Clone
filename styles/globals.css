@@ -1,10 +1,12 @@
 html,
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #000;
   color: #fff;
   font-size: 16px;
   margin: 0;
+  max-width: 2000px;
+  margin: auto;
 }
 
 a {
@@ -14,5 +16,4 @@ a {
 
 * {
   box-sizing: border-box;
-  background-color: ;
 }
