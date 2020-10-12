@@ -13,7 +13,6 @@ export const Wrapper = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   padding: 30px 50px;
-  border: solid yellow;
 
   @media (max-width: 550px) {
     padding: 15px 20px;
