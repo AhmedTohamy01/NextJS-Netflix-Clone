@@ -4,6 +4,7 @@ import JumboCompound from "../compounds/JumboCompound";
 import OptFormCompound from "../compounds/OptFormCompound";
 import Seperator from "../components/Seperator/Seperator";
 import AccordionCompound from "../compounds/AccordionCompound";
+import FooterCompound from "../compounds/FooterCompound";
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
       <AccordionCompound />
       <OptFormCompound />
       <Seperator />
+      <FooterCompound />
     </>
   );
 }
