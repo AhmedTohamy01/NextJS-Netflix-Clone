@@ -3,7 +3,7 @@ import HeaderCompound from "../compounds/HeaderCompound";
 import JumboCompound from "../compounds/JumboCompound";
 import OptFormCompound from "../compounds/OptFormCompound";
 import Seperator from "../components/Seperator/Seperator";
-
+import AccordionCompound from "../compounds/AccordionCompound";
 
 function Home() {
   return (
@@ -13,6 +13,9 @@ function Home() {
       </HeaderCompound>
       <Seperator />
       <JumboCompound />
+      <AccordionCompound />
+      <OptFormCompound />
+      <Seperator />
     </>
   );
 }
