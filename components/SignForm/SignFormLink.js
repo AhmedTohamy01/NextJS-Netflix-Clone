@@ -8,17 +8,16 @@ function SignFormLink({ children, ...restProps }) {
 
 /*---> Styles <---*/
 export const Link = styled.a`
- color: #fff;
+  color: #fff;
   text-decoration: none;
   margin-right: 30px;
   cursor: pointer;
   text-decoration: none;
   margin-left: 5px;
 
-
-&::hover {
-  text-decoration: underline;
-}
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 export default SignFormLink;

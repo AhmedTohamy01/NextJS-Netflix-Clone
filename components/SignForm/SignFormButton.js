@@ -8,17 +8,17 @@ function SignFormBase({ children, ...restProps }) {
 
 /*---> Styles <---*/
 export const Button = styled.button`
-    background: #e50914;
-    border-radius: 4px;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0 0 12px;
-    padding: 16px;
-    border: 0;
-    color: white;
-    cursor: pointer;
+  background: #e50914;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 12px;
+  padding: 16px;
+  border: 0;
+  color: white;
+  cursor: pointer;
 
-  &::disabled {
+  &:disabled {
     opacity: 0.3;
   }
 `;

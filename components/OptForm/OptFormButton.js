@@ -37,7 +37,7 @@ export const Wrapper = styled.div`
     width: 24px;
   }
 
-  img::hover {
+  &:hover {
     background: #f40612;
   }
 
