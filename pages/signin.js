@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { useRouter } from "next/router";
 import { FirebaseContext } from "../context/FirbaseContext";
 import HeaderWrapper from "../components/Header/HeaderWrapper";
-import NavBar from "../components/Header/NavBar";
+import Navbar from "../components/Header/Navbar";
 import Logo from "../components/Header/Logo";
 import FooterCompound from "../compounds/FooterCompound";
 import SignFormWrapper from "../components/SignForm/SignFormWrapper";
@@ -42,9 +42,9 @@ function SigninPage() {
   return (
     <>
       <HeaderWrapper className="header-wrapper-home">
-        <NavBar className="navbar-signin">
+        <Navbar className="navbar-signin">
           <Logo />
-        </NavBar>
+        </Navbar>
         <SignFormWrapper>
           <SignFormBase onSubmit={handleSubmit} method="POST">
             <SignFormTitle>Sign In</SignFormTitle>
