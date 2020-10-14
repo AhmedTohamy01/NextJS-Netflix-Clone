@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 /*---> Component <---*/
-function Navbar({ children, ...restProps }) {
+function NavBar({ children, ...restProps }) {
   return <Wrapper {...restProps}>{children}</Wrapper>;
 }
 
@@ -22,4 +22,4 @@ export const Wrapper = styled.nav`
   }
 `;
 
-export default Navbar;
+export default NavBar;
