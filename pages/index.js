@@ -12,6 +12,12 @@ import Html from "next/head";
 function Home() {
   return (
     <>
+      <Head>
+        <title>Netflix NEXT.JS</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Netflix Clone Built Using NEXT.JS" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <HeaderCompound>
         <OptFormCompound />
       </HeaderCompound>
