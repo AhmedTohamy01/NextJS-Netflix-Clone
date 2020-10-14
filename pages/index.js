@@ -6,7 +6,6 @@ import Seperator from "../components/Seperator/Seperator";
 import AccordionCompound from "../compounds/AccordionCompound";
 import FooterCompound from "../compounds/FooterCompound";
 import Head from "next/head";
-import Html from "next/head";
 
 
 function Home() {
