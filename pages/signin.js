@@ -41,8 +41,8 @@ function SigninPage() {
 
   return (
     <>
-      <HeaderWrapper className="header-wrapper-home">
-        <Navbar className="navbar-signin">
+      <HeaderWrapper>
+        <Navbar>
           <Logo />
         </Navbar>
         <SignFormWrapper>
