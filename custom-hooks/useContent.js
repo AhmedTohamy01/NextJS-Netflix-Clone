@@ -3,7 +3,7 @@ import { FirebaseContext } from "../context/FirbaseContext";
 
 function useContent(target) {
   const [content, setContent] = useState([]);
-  const { firebase } = useContext(FirebaseContext);
+  const firebase = useContext(FirebaseContext);
 
   useEffect(() => {
     firebase
