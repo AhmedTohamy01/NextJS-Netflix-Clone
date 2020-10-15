@@ -5,7 +5,7 @@ import styled from "styled-components";
 function OptFormButton({ children, ...restProps }) {
   return (
     <Wrapper>
-      <a href="/signin" {...restProps}>
+      <a href="/signup" {...restProps}>
         {children}
         <img src="../images/icons/chevron-right.png" alt="Try Now" />
       </a>
