@@ -18,14 +18,13 @@ import SignFormError from "../components/SignForm/SignFormError";
 function SigninPage() {
   const history = useRouter();
   const firebase = useContext(FirebaseContext);
-
   const [emailAddress, setEmailAddress] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
   const IsInvalid = password === "" || emailAddress === "";
 
-  function handleSubmit(event) {
+  const handleSubmit = (event) => {
     event.preventDefault();
 
     firebase
@@ -34,10 +33,11 @@ function SigninPage() {
       .then(() => {
         setEmailAddress("");
         setPassword("");
+        setError("");
         history.push("/browse");
       })
       .catch((error) => setError(error.message));
-  }
+  };
 
   return (
     <>
