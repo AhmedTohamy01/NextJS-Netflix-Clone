@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import useContent from "../custom-hooks/useContent";
-import HeaderWrapper from "../components/Header/HeaderWrapper";
-import Navbar from "../components/Header/Navbar";
+import BrowseHeaderWrapper from "../components/Header/BrowseHeaderWrapper";
+import BrowseNavbar from "../components/Header/BrowseNavbar";
 import Logo from "../components/Header/Logo";
-import FeatureWrapper from "../components/Feature/FeatureWrapper";
-import FeatureTitle from "../components/Feature/FeatureTitle";
-import FeatureSubTitle from "../components/Feature/FeatureSubTitle";
+import FeatureWrapperBrowse from "../components/Feature/FeatureWrapperBrowse";
+import FeatureTitleBrowse from "../components/Feature/FeatureTitleBrowse";
+import FeatureSubTitleBrowse from "../components/Feature/FeatureSubTitleBrowse";
 import PlayButton from "../components/Header/PlayButton";
 import HeaderLink from "../components/Header/HeaderLink";
 import AllSlidesWrapper from "../components/Movies/AllSlidesWrapper";
@@ -73,45 +73,29 @@ function BrowsePage() {
 
   return (
     <>
-      <HeaderWrapper className="header-wrapper-browse">
-        <Navbar className="navbar-browse">
+      <BrowseHeaderWrapper>
+        <BrowseNavbar>
           <Logo />
-          <HeaderLink
-            className={
-              category === "films" ? "header-link-bold" : "header-link"
-            }
-            onClick={() => setCategory("films")}
-          >
-            Films
-          </HeaderLink>
-          <HeaderLink
-            className={
-              category === "series" ? "header-link-bold" : "header-link"
-            }
-            onClick={() => setCategory("series")}
-          >
-            Series
-          </HeaderLink>
-        </Navbar>
-        <FeatureWrapper>
-          <FeatureTitle className="feature-title-browse">
-            Watch Joker Now
-          </FeatureTitle>
-          <FeatureSubTitle className="feature-subtitle-browse">
+          <HeaderLink onClick={() => setCategory("films")}>Films</HeaderLink>
+          <HeaderLink onClick={() => setCategory("series")}>Series</HeaderLink>
+        </BrowseNavbar>
+        <FeatureWrapperBrowse>
+          <FeatureTitleBrowse>Watch Joker Now</FeatureTitleBrowse>
+          <FeatureSubTitleBrowse>
             Forever alone in a crowd, failed comedian Arthur Fleck seeks
             connection as he walks the streets of Gotham City. Arthur wears two
             masks, the one he paints for his day job as a clown, and the guise
             he projects in a futile attempt to feel like he is part of the world
             around him.
-          </FeatureSubTitle>
+          </FeatureSubTitleBrowse>
           <PlayButton onClick={() => setShowPlayer(true)}>Play</PlayButton>
           {showPlayer ? (
             <PlayerOverlay onClick={() => setShowPlayer(false)}>
               <PlayerVideo src="./videos/video.mp4" type="video/mp4" />
             </PlayerOverlay>
           ) : null}
-        </FeatureWrapper>
-      </HeaderWrapper>
+        </FeatureWrapperBrowse>
+      </BrowseHeaderWrapper>
 
       <AllSlidesWrapper>
         {currentCategory.map((slideItem) => (
