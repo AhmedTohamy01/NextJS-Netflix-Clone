@@ -15,8 +15,6 @@ export const Wrapper = styled.div`
   @media (max-width: 650px) {
     flex-direction: column;
   }
-
-  transform: scale(1.25);
 `;
 
 export default AllCardsWrapper;
