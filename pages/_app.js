@@ -1,7 +1,7 @@
-import React from "react";
 import '../styles/globals.css'
 import { FirebaseContext } from "../context/FirbaseContext";
 import firebase from "../lib/firebase.prod";
+
 
 function MyApp({ Component, pageProps }) {
   return (
