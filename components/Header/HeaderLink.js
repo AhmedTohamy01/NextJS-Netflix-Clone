@@ -5,7 +5,7 @@ import styled from "styled-components";
 function HeaderLink({ children, ...restProps }) {
   return (
     <Wrapper>
-      <a {...restProps}>{children}</a>;
+      <a {...restProps}>{children}</a>
     </Wrapper>
   );
 }
@@ -18,7 +18,7 @@ export const Wrapper = styled.div`
     color: #fff;
     margin-left: 25px;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: normal;
   }
 `;
 
