@@ -31,10 +31,14 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head />
+        <Head>
+          <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+        </Head>
         <body>
           <Main />
           <NextScript />
+          <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-auth.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
         </body>
       </Html>
     );
