@@ -80,13 +80,11 @@ function BrowsePage() {
           <HeaderLink onClick={() => setCategory("series")}>Series</HeaderLink>
         </BrowseNavbar>
         <FeatureWrapperBrowse>
-          <FeatureTitleBrowse>Watch Joker Now</FeatureTitleBrowse>
+          <FeatureTitleBrowse>Watch The Irish Man</FeatureTitleBrowse>
           <FeatureSubTitleBrowse>
-            Forever alone in a crowd, failed comedian Arthur Fleck seeks
-            connection as he walks the streets of Gotham City. Arthur wears two
-            masks, the one he paints for his day job as a clown, and the guise
-            he projects in a futile attempt to feel like he is part of the world
-            around him.
+            Hit man Frank Sheeran looks back at the secrets he kept as a loyal
+            member of the Bufalino crime family in this acclaimed film from
+            Martin Scorsese.
           </FeatureSubTitleBrowse>
           <PlayButton onClick={() => setShowPlayer(true)}>Play</PlayButton>
           {showPlayer ? (
