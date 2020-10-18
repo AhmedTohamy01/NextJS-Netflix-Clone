@@ -2,7 +2,7 @@
 <h1 align="center">
   <img title="Netflix" src="https://fhsknightlife.com/wp-content/uploads/2020/04/uVASXqvMzyUrAPfSn9pMtxOC7s89ulzdDKBdtqCP.png" alt="NETFLIX Logo" width="400" />
   <br>
-  Netflix Clone Built Using NEXT.JS , Styled Components & Firebase
+  Netflix Clone Built Using <br /> NEXT.JS & Styled Components & Firebase
 </h1>
 
 <p><font size="3">
@@ -202,7 +202,7 @@ I have built this project using the following tools & techniques:
 - useState.
 - useContext.
 - useEffect.
-- useHistory.
+- useRouter.
 - useState.
 - Compound Components.
 - JSX.
@@ -306,7 +306,7 @@ const config = {
 
 ```
 # Run the app
-npm start
+npm run dev
 ```
 
 9) Now you can see the project in your browser as you see in the live demo link. 
