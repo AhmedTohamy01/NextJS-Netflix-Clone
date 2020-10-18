@@ -6,7 +6,7 @@ function CardFeatureClose({ children, ...restProps }) {
   return (
     <Button type="button" {...restProps}>
       {children}
-      <img src="../images/icons/close.webp" alt="Close" />
+      <img src="../images/icons/close.png" alt="Close" />
     </Button>
   );
 }
