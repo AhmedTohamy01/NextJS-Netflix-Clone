@@ -5,8 +5,7 @@ import Logo from "../components/Header/Logo";
 import Navbar from "../components/Header/Navbar";
 import SigninButton from "../components/Header/SigninButton";
 import FeatureTitle from "../components/Feature/FeatureTitle";
-import FeatureSubTitle from "../components/Feature/FeatureSubTitle";
-
+import Warning from "../components/Feature/Warning";
 
 function HeaderCompound({ children }) {
   return (
@@ -18,7 +17,7 @@ function HeaderCompound({ children }) {
         </Navbar>
         <FeatureWrapper>
           <FeatureTitle>Unlimited movies, TV shows and more.</FeatureTitle>
-          <FeatureSubTitle>Watch anywhere. Cancel at any time.</FeatureSubTitle>
+          <Warning>This is NOT official Netflix</Warning>
         </FeatureWrapper>
         {children}
       </HeaderWrapper>
